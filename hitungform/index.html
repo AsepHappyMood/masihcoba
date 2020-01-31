@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<style>
+ body{
+  background-color: #f1c40f;
+    -webkit-animation: color 5s ease-in  0s infinite alternate running;
+    -moz-animation: color 5s linear  0s infinite alternate running;
+    animation: color 5s linear  0s infinite alternate running;
+ }
+ @-webkit-keyframes color {
+0% { background-color: #f1c40f; }
+32% { background-color: #e74c3c; }
+55% { background-color: #9b59b6; }
+76% { background-color: #16a085; }
+100% { background-color: #2ecc71; }
+}
+@-moz-keyframes color {
+0% { background-color: #f1c40f; }
+32% { background-color: #e74c3c; }
+55% { background-color: #9b59b6; }
+76% { background-color: #16a085; }
+100% { background-color: #2ecc71; }
+}
+@keyframes color {
+0% { background-color: #f1c40f; }
+32% { background-color: #e74c3c; }
+55% { background-color: #9b59b6; }
+76% { background-color: #16a085; }
+100% { background-color: #2ecc71; }
+}
+ #cPersegi:hover{
+  box-shadow: 5px 10px 18px #888888;
+  width: 18.1rem;
+ }
+ #cPersegiPanjang:hover{
+  box-shadow: 5px 10px 18px #888888;
+  width: 18.1rem;
+ }
+ #cSegitiga:hover{
+  box-shadow: 5px 10px 18px #888888;
+  width: 18.1rem;
+ }
+ #cLingkaran:hover{
+  box-shadow: 5px 10px 18px #888888;
+  width: 18.1rem;
+ }
+
+ #cPersegi{
+  width: 18rem; float: left; margin-top: 20px; margin-left: 40px;
+
+ }
+ #cPersegiPanjang{
+  width: 18rem; float: left; margin-top: 20px; margin-left: 40px;
+ }
+ #cSegitiga{
+  width: 18rem; float: left; margin-top: 20px; margin-left: 40px;
+ }
+ #cLingkaran{
+  width: 18rem; float: left; margin-top: 20px; margin-left: 40px ;
+ }
+ /* CARD */
+
+ #persegiPanjang{
+  max-width: 18rem; margin-left: 370px; margin-top: 50px; clear: both; float: left;
+  text-align: center;
+ }
+ #hasilPersegi{
+  max-width: 18rem; margin-left: 40px; margin-top: 50px; clear: both; float: left;
+  text-align: center;
+ }
+ #hasilSegitiga{
+  max-width: 18rem; margin-left: 40px; margin-top: 50px; clear: both; float: right; margin-right: 350px;
+  text-align: center;
+ }
+ #Lingkaran{
+  max-width: 18rem; margin-left: 40px; margin-top: 50px; float: left; margin-top: 200px;
+  text-align: center;
+ }
+ /* Hasil */
+/* Persegi */
+ #hasilPersegi #rumus{
+
+  color: rgb(248, 232, 0);
+ }
+
+ #hasilPersegi #rumusKel{
+  color: rgb(248, 232, 0);
+ }
+ /* persegi Panjang */
+ #persegiPanjang #rumus{
+
+color: rgb(248, 232, 0);
+}
+ #persegiPanjang #rumusKel{
+
+  color: rgb(248, 232, 0);
+ }
+ /* hasil Segitiga */
+ #hasilSegitiga #rumus{
+
+  color: rgb(248, 232, 0);
+  }
+  #hasilSegitiga #rumusKel{
+
+  color: rgb(248, 232, 0);
+  }
+  /* Lingkaran */
+  #Lingkaran #rumus{
+
+  color: rgb(248, 232, 0);
+  }
+  #Lingkaran #rumusKel{
+
+  color: rgb(248, 232, 0);
+  }
+
+@media(max-width: 768px){ 
+   #cPersegi,#cPersegiPanjang,#cSegitiga,#cLingkaran
+   
+   {
+    margin-top: 40px;
+   }
+
+   #hasilPersegi,#persegiPanjang, #Lingkaran{
+     margin-left: 220px;
+    
+   }
+   #hasilSegitiga{
+     margin-right: 240px;
+   }
+
+   #Lingkaran{
+     margin-left: 220px;
+    margin-top: 40px;
+   }
+  }
+
+</style>
+</head>
+<body>
+
+    <div class="container-fluid ">
+        <div class="card" id="cPersegi" style="">
+            <img src="img/persegi.jpg" class="card-img-top" alt="..." style="border-bottom: 4px solid rgb(18, 168, 65);">
+            <div class="card-body" id="cardPersegi">
+              <h5 class="card-title">Mencari Luas Persegi</h5>
+              <form action="">
+                <p>Sisinya diketahui :</p>
+                <input type="number" name="sisi1" id="sisi1" value="">
+                <a class="btn btn-warning" style="float: right; margin-top: 10px;">oke</a>
+              </form>
+            </div>
+        </div>
+        <div class="card" id="cPersegiPanjang" style="">
+            <img src="img/persegi_panjang.jpg" class="card-img-top" alt="..." style="border-bottom: 4px solid rgb(18, 168, 65);">
+            <div class="card-body" id="cardPersegiPanjang">
+              <h5 class="card-title">Mencari Luas Persegi Panjang</h5>
+              <form action="">
+                <p>Panjang diketahui :</p>
+                <input type="number" name="panjang" id="panjang" value="">
+                <p>Lebar diketahui :</p>
+                <input type="number" name="lebar" id="lebar" value="">
+                <a class="btn btn-warning" style="float: right; margin-top: 10px;">oke</a>
+              </form>
+            </div>
+        </div>
+        <div class="card" id="cSegitiga" style="">
+            <img src="img/segitiga.png" class="card-img-top" alt="..."style="border-bottom: 4px solid rgb(18, 168, 65);">
+            <div class="card-body" id="cardSegitiga">
+              <h5 class="card-title">Mencari Luas Segitiga</h5>
+              <form action="">
+                <p>Alas diketahui :</p>
+                <input type="number" name="alas" id="alas" value="">
+                <p>Tinggi diketahui :</p>
+                <input type="number" name="tinggi" id="tinggi" value="">
+                <a class="btn btn-warning" style="float: right; margin-top: 10px;">oke</a>
+              </form>
+            </div>
+        </div>
+        <div class="card" id="cLingkaran" style="">
+            <img src="img/lingkaran.jpg" class="card-img-top" alt="..." style="border-bottom: 4px solid rgb(18, 168, 65);">
+            <div class="card-body" id="cardLingkaran">
+              <h5 class="card-title">Mencari Luas Lingkaran</h5>
+              <form action="">
+                <p>Diameter diketahui :</p>
+                <input type="number" name="diameter" id="diameter" value="">
+                <a class="btn btn-warning" style="float: right; margin-top: 10px;">oke</a>
+              </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid" >
+      <div id="hasilPersegi" style="display: none;">
+        <div class="card text-white bg-info mb-3" style="">
+            <div class="card-header" style="text-align: center; font-family: Arial; font-weight: bolder;">Hasil Persegi</div>
+            <div class="card-body" style="width: 300px;">
+              <p id="rumus">Rumus : Sisi x Sisi</p>
+              <h5 class="card-title" style="text-align: center;">...?</h5>
+              
+              <p>ingin mengetahui kelilingnya?</p>
+              <p id="rumusKel"></p>
+              <p id="hasilKelP" style="text-align: center;"></p>
+              <a class="btn btn-warning" style="float: right;">klik</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="persegiPanjang" style="display: none;">
+          <div class="card text-white bg-info mb-3" style="">
+            <div class="card-header" style="text-align: center; font-family: Arial; font-weight: bolder;">Hasil Persegi panjang</div>
+            <div class="card-body" style="width: 300px;">
+              <p id="rumus">Rumus : P X L</p>
+              <h5 class="card-title" style="text-align: center;">...?</h5>
+              <p>ingin mengetahui kelilingnya?</p>
+              
+              <p id="rumusKel"></p>
+              <p id="hasilKelPanjang" style="text-align: center;"></p>
+              <a class="btn btn-warning" style="float: right;">klik</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+        <div id="hasilSegitiga" style="display: none;">
+          <div class="card text-white bg-info mb-3" style="">
+            <div class="card-header" style="text-align: center; font-family: Arial; font-weight: bolder;">Hasil Segitiga</div>
+            <div class="card-body" style="width: 300px;">
+              <p id="rumus">Rumus : 1/2 x A x T</p>
+              <h5 class="card-title" style="text-align: center;">...?</h5>
+              <p>ingin mengetahui kelilingnya?</p>
+              
+              <p id="rumusKel"></p>
+              <p id="hasilKelS" style="text-align: center;"></p>
+              <a class="btn btn-warning" style="float: right;">klik</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div id="Lingkaran" style="display: none;">
+      <div class="card text-white bg-info mb-3" style="">
+        <div class="card-header" style="text-align: center; font-family: Arial; font-weight: bolder;">Hasil Lingkaran</div>
+        <div class="card-body" style="width: 300px;">
+          <p id="rumus">Rumus : D / 2</p>
+          <h5 class="card-title" style="text-align: center;">...?</h5>
+          <p>ingin mengetahui kelilingnya?</p>
+          
+          <p id="rumusKel"></p>
+          <p id="hasilKelL" style="text-align: center;"></p>
+          <a class="btn btn-warning" style="float: right;">klik</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+  </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+        $("#cardPersegi a").click(function(){
+          $("#Lingkaran").hide("slow");
+          $("#persegiPanjang").hide("slow");
+          $("#hasilSegitiga").hide("slow");
+          $("#hasilPersegi").show("slow");
+        });
+
+        $("#cardPersegiPanjang a").click(function(){
+          $("#hasilPersegi").hide("slow");
+          $("#hasilSegitiga").hide("slow");
+          $("#Lingkaran").hide("slow");
+          $("#persegiPanjang").show("slow");
+        });
+
+        $("#cardSegitiga a").click(function(){
+          $("#hasilPersegi").hide("slow");
+          $("#persegiPanjang").hide("slow");
+          $("#Lingkaran").hide("slow");
+          $("#hasilSegitiga").show("slow");
+        });
+
+        $("#cardLingkaran a").click(function(){
+          $("#hasilPersegi").hide("slow");
+          $("#persegiPanjang").hide("slow");
+          $("#hasilSegitiga").hide("slow");
+          $("#Lingkaran").show("slow");
+        });
+
+      });
+      //Persegi
+      const persegiOke = document.querySelector("#cardPersegi a");
+      persegiOke.addEventListener('click',function(){
+        const sisi1 =  document.querySelector("#sisi1").value;
+        const hasil = document.querySelector("#hasilPersegi h5");
+
+        hasil.innerHTML = sisi1 * sisi1 ;
+        
+      });
+
+      const klik1 = document.querySelector("#hasilPersegi a");
+      klik1.addEventListener('click', function(){
+        const sisi1 =  document.querySelector("#sisi1").value;
+        const p = document.querySelector('#hasilKelP');
+        const rumusKel = document.querySelector("#rumusKel");
+        
+       rumusKel.innerHTML = "Rumus = Sisi X Sisi X Sisi X sisi" 
+       p.innerHTML = sisi1 * sisi1 *sisi1 *sisi1;
+      });
+
+
+      //Persegi Panjang
+      
+      
+
+      const panjangOke = document.querySelector("#cardPersegiPanjang a");
+      panjangOke.addEventListener('click',function(){
+        const panjang1 =  document.querySelector("#panjang").value;
+        const lebar1 =  document.querySelector("#lebar").value;
+        const hasil = document.querySelector("#persegiPanjang h5");
+
+        hasil.innerHTML = panjang1 * lebar1 ;
+        
+      });
+
+      const klik2 = document.querySelector("#persegiPanjang a");
+      klik2.addEventListener('click', function(){
+        const panjang =  document.querySelector("#panjang").value;
+        const lebar =  document.querySelector("#lebar").value;
+        const p = document.querySelector('#hasilKelPanjang');
+        const rumusKel = document.querySelector("#persegiPanjang #rumusKel");
+        
+       rumusKel.innerHTML = "Rumus = P + L x 2"
+        const plus = parseInt(panjang) + parseInt(lebar);
+        p.innerHTML = plus * 2;
+      });
+
+
+      //Segitiga
+
+      const segitaOke = document.querySelector("#cardSegitiga a");
+      segitaOke.addEventListener('click',function(){
+        const alas =  document.querySelector("#alas").value;
+        const tinggi =  document.querySelector("#tinggi").value;
+        const hasil = document.querySelector("#hasilSegitiga h5");
+
+        hasil.innerHTML = 0.5 * alas * tinggi ;
+        
+      });
+
+      const klik3 = document.querySelector("#hasilSegitiga a");
+      klik3.addEventListener('click', function(){
+        const p = document.querySelector('#hasilKelS');
+        const alas =  document.querySelector("#alas").value;
+        const rumusKel = document.querySelector("#hasilSegitiga #rumusKel");
+        
+       rumusKel.innerHTML = "Rumus = A x A x A"
+
+        p.innerHTML = alas * alas * alas ;
+      });
+
+
+      //LIngkaran
+      const lingkaranOke = document.querySelector("#cardLingkaran a");
+      lingkaranOke.addEventListener('click',function(){
+        const diameter =  document.querySelector("#diameter").value;
+        const hasil = document.querySelector("#Lingkaran h5");
+
+        const bagiDiameter = diameter / 2 ;
+        hasil.innerHTML = bagiDiameter * bagiDiameter * 3.14  ;
+        
+      }); 
+    
+      const klik4 = document.querySelector("#Lingkaran a");
+      klik4.addEventListener('click', function(){
+        const diameter =  document.querySelector("#diameter").value;
+        const p = document.querySelector('#hasilKelL');
+
+        const bagiDiameter = diameter / 2 ;
+        const rumusKel = document.querySelector("#Lingkaran #rumusKel");
+        
+        rumusKel.innerHTML = "Rumus = Luas x 2 x 22/7"
+       const pembulatan = p.innerHTML = bagiDiameter * 2 * 3.14 ;
+      });
+    
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
