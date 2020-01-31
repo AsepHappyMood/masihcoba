@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Portofolio</title>
+    <style>
+    
+    * {
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p, h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.75;
+    color: #6c757d!important;
+    font-family: sans-serif;
+}
+h4 {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+h2{
+    font-family: sans-serif;
+}
+
+/* navbar */
+#mainNav {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#mainNav h1 { 
+    float: left;
+    margin-top: 15px;
+
+}
+
+#mainNav h1 a{ 
+    color: #fed136;
+    text-decoration: none;
+}
+#mainNav #menu{ 
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#mainNav #menu li{ 
+    display: inline;
+    margin: 20px 20px 20px 20px;
+}
+#mainNav #menu li a{ 
+ color: aliceblue;
+ text-decoration: none;
+}
+#mainNav #menu li a:hover{ 
+    color: #fed136;
+    font-size: 15.5px;
+}
+
+/* end navbar */
+
+/* header */
+
+.fotoHeader{
+    text-align: center;
+    background-image: url(img/My\ Post.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    
+}
+
+.fotoHeader .intro{
+    padding-top: 300px;
+    padding-bottom: 200px;
+}
+
+.fotoHeader .welcome {
+    font-size: 40px;
+    font-family:  sans-serif;
+    font-weight: 700px;
+    line-height: 50px;
+    color: rgb(255, 254, 254);;
+    margin-bottom: 20px;
+    margin-top: 0;
+    
+}
+
+
+.fotoHeader .sapa{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+    padding-top: 0px;
+    color: rgb(255, 254, 254);;
+}
+.fotoHeader .btn{
+    background-color: #fed136;
+    padding: 20px 40px 20px 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    font-family:sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+.fotoHeader .btn:hover{
+    background-color: #f1c730;
+    font-family:sans-serif;
+    
+}
+/* endheader */
+/* Services */
+.containerService{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(img/backgroundsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 550px;
+    
+}
+.containerService .baris1{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   box-sizing: border-box;
+    
+}
+.containerService .baris1 .col-12{
+    text-align: center;
+    padding-bottom: 40px;
+} 
+.containerService .baris1 .col-12 h2{
+  font-family: sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+} 
+
+.containerService .baris2{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   box-sizing: border-box;
+   text-align: center!important;
+}
+.containerService .baris2 .col-4{
+    box-sizing: border-box;
+    width: 350px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.containerService .baris2 .col-4 .coba img{
+    width: 260px;
+    height: 160px;
+    border-radius: 10px;
+    position: relative;
+    border: 6px solid white;
+}
+.containerService .baris2 .col-4 .coba img:hover{
+    width: 260.5px;
+    height: 160.5px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.containerService .baris2 .col-4 h4{
+    margin: 15px 0px;
+}
+
+
+
+/* end Service */
+/* portofolio */
+.containerPorto{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgb(243, 243, 243);
+}
+
+.containerPorto .baris1{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   box-sizing: border-box;
+}
+
+
+.containerPorto .baris1 .col-12{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.containerPorto .baris1 .col-12 h2{
+  font-family: sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.containerPorto .baris2{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   box-sizing: border-box;
+   text-align: center!important;
+}
+.containerPorto .baris2 .animasiWarna{
+    width:  280px;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #f22613, #f89406, #26a65b, #5868ec, #f54e80, #f7ca18, #d2527f);
+    background-size: 500% 500%;
+    -webkit-animation: ignielGradient 12s ease infinite;
+    -moz-animation: ignielGradient 12s ease infinite;
+    animation: ignielGradient 12s ease infinite;
+}
+
+/* Animasi + Prefix untuk browser */
+@-webkit-keyframes ignielGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes ignielGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes ignielGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.containerPorto .baris2 .col-4{
+    width: 260px;
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: white;
+}
+.containerPorto .baris2 .col-4 .coba img{
+    width: 250px;
+    height: 160px;
+    position: relative;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.containerPorto .baris2 .col-4 h4{
+    margin: 15px 0px;
+}
+
+/* end portofolio */
+/* About */
+
+.continerAbout{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 100px 0;
+    background-image: url(img/splash3.jpg);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+.continerAbout .baris1{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.continerAbout .baris1 .col-12{
+    width: 70%;
+}
+.continerAbout .baris1 .col-12 h2{
+    font-family: sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.continerAbout .baris2{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.continerAbout .baris2 .col-12{
+    width: 70%;
+}
+.continerAbout .baris2 .col-12 .timeline{
+    position: relative;
+    padding: 0;
+    list-style: none;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+/* .continerAbout .baris2 .col-12 .timeline::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    margin-left: -1.5px;
+    content: '';
+    background-color: #e9ecef;
+    left: 50%;
+} */
+
+.timeline::before, .timeline::after{
+    display: table;
+    content: '';
+}
+
+.continerAbout .baris2 .col-12 ul li{ 
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.continerAbout .baris2 .col-12 ul li::before{ 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    margin-left: -1.5px;
+    content: '';
+    left: 50%;
+    height: 1300px;
+    margin-top: 20px;
+    z-index: -3;
+    background-color: #f1c40f;
+    -webkit-animation: color 5s ease-in  0s infinite alternate running;
+    -moz-animation: color 5s linear  0s infinite alternate running;
+    animation: color 5s linear  0s infinite alternate running;
+}
+
+/* Animasi + Prefix untuk browser */
+@-webkit-keyframes color {
+0% { background-color: #f1c40f; }
+32% { background-color: #e74c3c; }
+55% { background-color: #9b59b6; }
+76% { background-color: #16a085; }
+100% { background-color: #2ecc71; }
+}
+@-moz-keyframes color {
+0% { background-color: #f1c40f; }
+32% { background-color: #e74c3c; }
+55% { background-color: #9b59b6; }
+76% { background-color: #16a085; }
+100% { background-color: #2ecc71; }
+}
+@keyframes color {
+0% { background-color: #f1c40f; }
+32% { background-color: #e74c3c; }
+55% { background-color: #9b59b6; }
+76% { background-color: #16a085; }
+100% { background-color: #2ecc71; }
+}
+
+.continerAbout .baris2 .col-12 .timeline .timelineImage{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    color: #fff;
+    border: 7px solid #e9ecef;
+    border-radius: 100%;
+    background-color: #fed136;
+    flex-wrap: wrap;
+    display: flex;
+    position: absolute;
+    margin-left: 370px;
+    margin-top: 20px;
+}
+.continerAbout .baris2 .col-12 .timeline .timelineImage2{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    color: #fff;
+    border-radius: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    position: absolute;
+    margin-left: 370px;
+    margin-top: 20px;
+    background-color: #f1c40f;
+    -webkit-animation: color 5s ease-in  0s infinite alternate running;
+    -moz-animation: color 5s linear  0s infinite alternate running;
+    animation: color 5s linear  0s infinite alternate running;
+    
+}
+.continerAbout .baris2 .col-12 .timeline .timelineImage2 img{
+    width: 110px;
+    height: 110px;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 100%;
+   
+}
+.continerAbout .col-12 .timelineHeader{
+    width: 320px;
+    float: left;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.continerAbout .baris2 .col-12 ul li .areaLi2{ 
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    
+}
+.continerAbout .baris2 .col-12 .timeline .areaLi2 .timelineImage img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+}
+.continerAbout .baris2 .col-12 ul .areaLi2 .timelineHeader{ 
+    width: 320px;
+    float: right;
+    text-align: left;
+    margin-left: 500px;
+}
+
+.continerAbout .baris2 .col-12 ul .areaLi2 .timelineHeader2{ 
+    width: 320px;
+    float: left;
+    text-align: right;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.areaLi .timelineImage h4{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* end About */
+/* Contact */
+
+.containerContact{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    background-image: url(img/splash4.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 700px;
+}
+
+.containerContact .baris1{
+    text-align: center;
+    width: 1000px;
+    
+}
+.containerContact .baris1 .col-12 h2{
+    font-family: sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+  } 
+.containerContact .baris1 .form{
+    width: 1000px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.containerContact .baris1 .input{
+    width: 300px;
+    justify-content: center;
+    
+}
+.containerContact .baris1 .input input{
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #d8d21f;
+    width: 300px;
+}
+.containerContact .baris1 .input textarea{
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #dfdb22;
+    width: 300px;
+}
+.sosialMedia{
+    width: 1000px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+}
+.sosialMedia img{
+    max-width: 30px;
+    margin: 10px;
+}
+/* end contact */
+
+/* footer */
+
+footer{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(243, 243, 243);
+}
+footer .baris1{
+    width: 800px;
+    padding: 25px;
+    text-align: center;
+}
+
+/* end footer */
+
+
+
+
+
+/* fixed */
+
+.fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+/* warna */
+.dark {
+    background-color: #212529;
+}
+
+.bYellow{
+    background-color: #fed136;
+}
+
+.yellow{
+    color: #fed136;
+}
+.background2{
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    margin-top: 900px;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="dark fixed-top">
+        <div id="mainNav">
+             <h1 class="yellow"><a href="">AZStyle</a> </h1>
+            <div id="menu">
+                <ul>
+                    <li><a href="">SERVICE</a> </li>
+                    <li><a href="">PORTOFOLIO</a> </li>
+                    <li><a href="">ABOUT</a> </li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>  
+        </div>
+    </nav>
+    <!-- end navbar-->
+    
+    <!-- Header -->
+    <header class="fotoHeader"> 
+             <div class="intro">
+                <div class="welcome">Selamat Datang di Portofolio Saya</div>
+                <div class="sapa">Senang Bertemu Dengan Anda</div>
+                
+                <a href="" class="btn">Selengkapnya</a>
+            </div>
+           
+    </header>
+    <!-- end Header -->
+
+    <!-- Services -->
+    <section>
+        <div class="containerService">
+            <div class="baris1">
+                <div class="col-12">
+                    <h2>Pelayanan</h2>
+                    <h3 sty>Saya melayani beberapa pekerjaan secara profesional.</h3>
+                </div>
+               
+            </div>
+            
+            <div class="baris2">
+                <div class="col-4">
+                    <span class="coba">
+                         <img id="serviceFoto" src="img/backend1.jpg" alt="">
+                    </span>
+                    <h4>Backend Developer</h4>
+                    <p id="pFoto">Bahasa yang saya kuasai untuk backend developer adalah PHP dan SQL.</p>
+                </div>
+                <div class="col-4">
+                    <span class="coba">
+                        <img id="serviceFoto" src="img/frontend.svg" alt="">
+                   </span>
+                        <h4>Frontend Developer</h4>
+                        <p id="pFoto">Untuk frontend saya menguasai Html, Css, Javascript dasar dan Framework Bootstrap.</p>
+                </div>
+                <div class="col-4">
+                    <span class="coba">
+                        <img id="serviceFoto" src="img/designer.jpg" alt="">
+                   </span>
+                        <h4>Designer</h4>
+                        <p id="pFoto">Software yang saya kuasai untuk designer adalah Coreldraw, Photoshop dan Adobe ilustrator.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- end Services -->
+
+    <!-- Portofolio -->
+
+    <section>
+        <div class="containerPorto">
+            <div class="baris1">
+                    <div class="col-12">
+                        <h2>Portofolio</h2>
+                        <h3>Berikut beberapa karya saya</h3> 
+                    </div>
+            </div>
+            
+            <div class="baris2">
+                <div class="animasiWarna">
+                    <div class="col-4">
+                        <span class="coba">
+                            <a href="">
+                            <img src="img/backend1.jpg" alt="">
+                            </a>
+                        </span>
+                        <h4>Aplikasi Hafalan</h4>
+                        <p>Website</p>
+                    </div>
+                </div>
+                <div class="animasiWarna">
+                    <div class="col-4">
+                        <span class="coba">
+                            <a href="">
+                                <img src="img/frontend.svg" alt="">
+                            </a>
+                        </span>
+                        <h4>Apliksi Pengaduan</h4>
+                        <p>Website</p>
+                    </div>
+                </div>
+                <div class="animasiWarna">
+                    <div class="col-4">
+                        <span class="coba">
+                            <a href="">
+                                <img src="img/designer.jpg" alt="">
+                            </a>
+                        </span>
+                        <h4>Toko Online</h4>
+                        <p>Website</p>
+                    </div>
+                </div> 
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- end Portofolio -->
+    
+    <!-- About -->
+    <section>
+    <div class="continerAbout">
+        <div class="background2">
+            <img src="img/splash5.jpg" alt="" style="width: 600px;">
+        </div>
+        <div class="baris1">
+            <div class="col-12">
+                <h2 class="section-heading text-uppercase">Tentang Saya</h2>
+                <h3 class="section-subheading text-muted">Perjalanan karir saya</h3>
+            </div>
+        </div>
+        <div class="baris2">
+            <div class="col-12">
+                <ul class="timeline">
+                    <li class="areaLi">
+                        <div class="timelineImage2">
+                            <img src="img/graphic-design.png" alt="" class="image">
+                        </div>
+                        <div class="timelineHeader">
+                            <h4>2016-2017</h4>
+                            <h4 class="subheading">Awal Mulai Bekerja</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur facere totam quod, nam corrupti!</p>
+                        </div>
+                    </li>
+                    <li class="areaLi2">
+                        <div class="timelineImage2">
+                            <img src="img/waiter-restoran.jpg" alt="" class="image" style="">
+                        </div>
+                        <div class="timelineHeader">
+                            <h4>2017 - Agustus 2019</h4>
+                            <h4 class="subheading">Beralih Profesi Sebagai Waiter</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur facere totam quod, nam corrupti!</p>
+                        </div>
+                    </li>
+                    <li class="areaLi2">
+                        <div class="timelineImage2">
+                            <img src="img/programmer.jpg" alt="" class="image">
+                        </div>
+                        <div class="timelineHeader2">
+                            <h4>Agustus 2019</h4>
+                            <h4 class="subheading">Pelatihan Sekolah Progammer 3 Bulan</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur facere totam quod, nam corrupti!</p>
+                        </div>
+                    </li>
+                    <li class="areaLi2">
+                        <div class="timelineImage2">
+                            <img src="img/programmer2.png" alt="" class="image">
+                        </div>
+                        <div class="timelineHeader">
+                            <h4>Januari 2020</h4>
+                            <h4 class="subheading">Pelatihan Progammer 6 Bulan</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur facere totam quod, nam corrupti!</p>
+                        </div>
+                    </li>
+                    <li class="areaLi">
+                        <div class="timelineImage">
+                            <h4 style="font-size: 20px;">Be Part
+                            <br>Of Our
+                            <br>Story!</h4>
+                        </div>
+                    </li>
+                </ul>
+             </div>
+        </div>
+    </div>
+    
+</section>
+
+    <!-- end About -->
+   
+    <!-- Contact -->
+    <section>
+        <div class="containerContact">
+            <div class="baris1">
+                <div class="col-12">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Kerja sama lebih lanjut</h3>
+                    <div class="form">
+                    <form action="">
+                        <div class="input">
+                            <input type="text" placeholder="Nama kamu ya bukan nama pacar kamu">
+                            <input type="email" style="margin-top: 25px;" placeholder="Email itu harus ada @nya ya :)">
+                            <textarea placeholder="Boleh di isi boleh engga hehe" style="margin-top: 25px;"></textarea>
+                        </div>
+                    </div>  
+                    </form>
+                    <div class="sosialMedia">
+                        <a href=""><img src="img/telp.png" alt="" style="opacity: 0.8;"></a><h4 style="margin-top: 15px; margin-right: 5px;  opacity: 0.8;">082183075181</h4>
+                        <a href=""><img src="img/instagram.png" alt=""  style="opacity: 0.8;"></a><h4 style="margin-top: 15px; margin-right: 5px; opacity: 0.8; ">asepzainudinaz</h4>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <!-- End Contact -->
+
+    <footer>
+        <div class="baris1">
+            <span class="copyright">Design Web By Asep Zainudin 2020</span>
+        </div>
+    </footer>
+
+</body>
+</html>
